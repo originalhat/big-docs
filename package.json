@@ -1,0 +1,11 @@
+{
+  "name": "hyper",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Devin Brown <devin.g.brown@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "lodash": "^4.17.4",
+    "webpack": "^3.8.1"
+  }
+}
