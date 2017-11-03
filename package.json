@@ -6,6 +6,12 @@
   "license": "MIT",
   "dependencies": {
     "lodash": "^4.17.4",
-    "webpack": "^3.8.1"
+    "webpack": "^3.8.1",
+    "webpack-dev-server": "^2.9.4"
+  },
+  "scripts": {
+    "build": "webpack",
+    "watch": "webpack --watch",
+    "serve": "webpack-dev-server --open"
   }
 }
