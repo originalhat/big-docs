@@ -1,16 +1,16 @@
 import { h } from 'hyperapp';
 
-/**
- * first argument is 'state' (an object - {})
- * second argument is 'actions' (an object - {})
- * here we destructure what is needed
- * 'num' from 'state' and 'add'/'sub' from 'actions'
- */
+import styles from './Counter.css';
+
+console.log(styles)
+
 export default ({ num }, { add, sub }) => (
-  <div class="counter">
-    <h1>hyperapp-one</h1>
+  <div class={styles['Counter']}>
+    <h1>Big Docs</h1>
     <p><em>With JSX and Webpack</em></p>
+
     <hr />
+
     <section>
       <button
         class="sub"
