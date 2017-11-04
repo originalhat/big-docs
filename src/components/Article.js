@@ -13,7 +13,7 @@ export default (state, actions) => (
     <h1 class={styles['Article__heading']}>Lorem ipsum dolor sit amet</h1>
     <article class={styles['Article__content']}>{state.content}</article>
 
-    <h2>{state.query}!</h2>
+    <h2>{state.query}</h2>
   </div>
 );
 
