@@ -1,24 +1,11 @@
-import { h, app } from "hyperapp"
+import { app } from 'hyperapp';
+import actions from './actions';
+import state from './state';
+import view from './components/Counter';
 
 app({
-  state: {
-    count: 0
-  },
-  view: (state, actions) => (
-    h("main", {}, [
-      h("h1", {}, state.count),
-      h("button", {
-        onclick: actions.down,
-        disabled: state.count <= 0
-      }, "–"),
-      h("button", {
-        onclick: actions.up
-      }, "+")
-    ])
-  ),
-  actions: {
-    down: state => ({ count: state.count - 1 }),
-    up: state => ({ count: state.count + 1 })
-  }
-})
+  state,
+  actions,
+  view,
+});
 
