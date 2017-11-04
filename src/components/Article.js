@@ -4,11 +4,11 @@ import styles from './Article.css';
 
 console.log(styles)
 
-export default ({ content }, { }) => (
+export default ({ query, content }, { }) => (
   <div class={styles['Article']}>
     <div class={styles['Search']}>
       <span class={styles['Search__prefix']}>big-docs</span>
-      <input class={styles['Search__input']} type="query" placeholder="Search for a file"/>
+      <input class={styles['Search__input']} type="query" value={query}/>
     </div>
 
     <div class={styles['Article__divider']}/>

@@ -14,7 +14,7 @@
 }
 
 :local(.Article__content) {
-  height: 60vh;
+
 }
 
 :local(.Search) {
@@ -23,6 +23,7 @@
 }
 
 :local(.Search__prefix) {
+  font-weight: 600;
   align-items: center;
   display: flex;
   font-size: 16px;
@@ -31,6 +32,7 @@
 :local(.Search__prefix:after) {
   content: '/';
   margin: 0 4px;
+  font-weight: 400;
 }
 
 :local(.Search__input) {
