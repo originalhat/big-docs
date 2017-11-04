@@ -17,6 +17,6 @@
   "scripts": {
     "build": "webpack",
     "watch": "webpack --watch",
-    "serve": "webpack-dev-server --open"
+    "serve": "webpack-dev-server"
   }
 }
