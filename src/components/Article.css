@@ -1,0 +1,43 @@
+:local(.Article) {
+  margin: 36px auto;
+  max-width: 900px;
+}
+
+:local(.Article__divider) {
+  border-bottom: 1px solid #7c7c7c;
+  margin: 16px 0 32px;
+  outline: none;
+}
+
+:local(.Article__heading) {
+
+}
+
+:local(.Article__content) {
+  height: 60vh;
+}
+
+:local(.Search) {
+  display: flex;
+  min-height: 36px;
+}
+
+:local(.Search__prefix) {
+  align-items: center;
+  display: flex;
+  font-size: 16px;
+}
+
+:local(.Search__prefix:after) {
+  content: '/';
+  margin: 0 4px;
+}
+
+:local(.Search__input) {
+  flex: 1 1;
+  appearance: none;
+  border: 0;
+  color: #24292e;
+  font-size: 16px;
+  outline: none;
+}

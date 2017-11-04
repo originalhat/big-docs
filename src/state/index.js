@@ -1,4 +1,4 @@
 export default {
-  num: 0,
+  content: 'Add content to your article.',
 };
 
