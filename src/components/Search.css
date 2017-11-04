@@ -1,0 +1,26 @@
+:local(.Search) {
+  display: flex;
+  min-height: 36px;
+}
+
+:local(.Search__prefix) {
+  font-weight: 600;
+  align-items: center;
+  display: flex;
+  font-size: 16px;
+}
+
+:local(.Search__prefix:after) {
+  content: '/';
+  margin: 0 4px;
+  font-weight: 400;
+}
+
+:local(.Search__input) {
+  flex: 1 1;
+  appearance: none;
+  border: 0;
+  color: #24292e;
+  font-size: 16px;
+  outline: none;
+}

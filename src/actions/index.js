@@ -1,5 +1,5 @@
 export default {
-  add: ({ num }) => ({ num: num + 1 }),
-  sub: ({ num }) => ({ num: num - 1 }),
+  search: (state, actions, {target}) => {
+    return {query: target.value};
+  }
 };
-
