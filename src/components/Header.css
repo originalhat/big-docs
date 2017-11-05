@@ -1,0 +1,22 @@
+:local(.Header), :local(.Header--editing) {
+  display: flex;
+}
+
+:local(.Header__text) {
+  flex: 1 1;
+  margin: 24px 0;
+  font-size: 2em;
+  cursor: cell;
+}
+
+:local(.Header__input) {
+  appearance: none;
+  border: 0;
+  color: #24292e;
+  flex: 1 1;
+  font-size: 2em;
+  font-weight: 700;
+  margin: 24px 0;
+  outline: none;
+  padding: 0;
+}

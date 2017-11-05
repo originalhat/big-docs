@@ -3,17 +3,28 @@ import { h } from 'hyperapp';
 import styles from './Article.css';
 
 import Search from './Search';
+import Header from './Header';
 
 export default (state, actions) => (
   <div class={styles['Article']}>
-    <Search searchAction={actions.search} />
+    <Search searchAction={actions.search}/>
 
     <div class={styles['Article__divider']}/>
 
-    <h1 class={styles['Article__heading']}>Lorem ipsum dolor sit amet</h1>
-    <article class={styles['Article__content']}>{state.content}</article>
+    {state.query ?
+      <span>No search results found: "{state.query}"</span> :
+      <div>
+        <Header
+          editingTitle={state.editingTitle}
+          headerTitle={state.title}
+          editTitle={actions.editTitle}
+          updateTitle={actions.updateTitle}
+          saveTitle={actions.saveTitle}
+        />
 
-    <h2>{state.query}</h2>
+        <article class={styles['Article__content']}>{state.content}</article>
+      </div>
+    }
   </div>
 );
 
