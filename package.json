@@ -1,10 +1,11 @@
 {
-  "name": "hyper",
-  "version": "1.0.0",
+  "name": "shoutcard",
+  "version": "0.0.1",
   "main": "index.js",
+  "repository": "git@github.com:originalhat/shoutcard.git",
   "author": "Devin Brown <devin.g.brown@gmail.com>",
   "license": "MIT",
- "devDependencies": {
+  "devDependencies": {
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.2",
     "babel-plugin-transform-react-jsx": "^6.24.1",
